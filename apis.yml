@@ -1,7 +1,26 @@
 aid: simplifai-labs
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/simplifai-labs.png
 name: Simplifai Labs
-description: Simplifai Labs is a company surfaced as a portfolio company of 500-global and added to the
-  API Evangelist network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+description: Simplifai Labs is a Dubai-based artificial intelligence and marketing-technology
+  company founded in 2018 by Sachin Rathnaraj Jain. Its deep-learning platform combines
+  image recognition, computer vision, sentiment and emotion analysis, and natural language
+  processing to place brand advertising alongside highly relevant, brand-safe content
+  in real time, without relying on stored user cookie data. Simplifai Labs completed the
+  500 Global (Misk 500 MENA) accelerator in Riyadh and is a 500 Global portfolio company.
+  As of this enrichment pass the company publishes no public API, developer documentation,
+  or SDKs, and its original simplifailabs.com domain now resolves to an unrelated hosting
+  provider, so no API artifacts could be harvested.
 url: https://raw.githubusercontent.com/api-evangelist/simplifai-labs/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -9,11 +28,21 @@ x-backed-by:
 - 500-global
 x-tier: stub
 x-tier-reason: portfolio-lead
+x-domain-status: 'simplifailabs.com no longer serves Simplifai Labs (resolves to an unrelated
+  hosting provider, Cyberfuel, as of 2026-07-21); no API/docs subdomains resolve'
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-21'
 tags:
 - Company
+- Artificial Intelligence
+- Machine Learning
+- Marketing Technology
+- Advertising
+- Brand Safety
+- Contextual Advertising
+- Computer Vision
+- Natural Language Processing
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -23,3 +52,14 @@ maintainers:
 common:
 - type: Website
   url: https://simplifailabs.com
+- type: GitHubOrganization
+  url: https://github.com/simplifailabs
+- type: LinkedIn
+  url: https://www.linkedin.com/company/simplifailabs
+- type: Crunchbase
+  url: https://www.crunchbase.com/organization/simplifai-labs
+x-enrichment:
+  date: '2026-07-21'
+  status: nochange
+  artifacts_added: 0
+  pass: local-v1
