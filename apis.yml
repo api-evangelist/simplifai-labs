@@ -19,8 +19,12 @@ description: Simplifai Labs is a Dubai-based artificial intelligence and marketi
   in real time, without relying on stored user cookie data. Simplifai Labs completed the
   500 Global (Misk 500 MENA) accelerator in Riyadh and is a 500 Global portfolio company.
   As of this enrichment pass the company publishes no public API, developer documentation,
-  or SDKs, and its original simplifailabs.com domain now resolves to an unrelated hosting
-  provider, so no API artifacts could be harvested.
+  or SDKs. Its simplifailabs.com domain lapsed and was re-registered on 2025-08-18, and now
+  serves a Cyberfuel hosting placeholder rather than any Simplifai Labs content; no API,
+  docs, or developer subdomain resolves, and the simplifailabs GitHub organization holds a
+  single forked UI repository and no first-party libraries. The founder's subsequent venture,
+  Smartifai (Dubai, 2022), is a separate company and is not profiled here. No API artifacts
+  could be harvested.
 url: https://raw.githubusercontent.com/api-evangelist/simplifai-labs/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -28,11 +32,15 @@ x-backed-by:
 - 500-global
 x-tier: stub
 x-tier-reason: portfolio-lead
-x-domain-status: 'simplifailabs.com no longer serves Simplifai Labs (resolves to an unrelated
-  hosting provider, Cyberfuel, as of 2026-07-21); no API/docs subdomains resolve'
+x-domain-status: 'simplifailabs.com no longer serves Simplifai Labs. WHOIS (checked 2026-08-12)
+  shows the domain was dropped and re-registered on 2025-08-18 via GoDaddy, delegated to
+  NS1/NS2.CYBERFUEL.COM, and it now returns a Spanish-language Cyberfuel hosting placeholder
+  ("Actualmente este sitio no cuenta con contenido publicado"). api., docs., and developer.
+  subdomains do not resolve; simplifailabs.ae/.io/.co/.tech and simplifai-labs.com do not
+  resolve either.'
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-21'
+modified: '2026-08-12'
 tags:
 - Company
 - Artificial Intelligence
@@ -59,7 +67,30 @@ common:
 - type: Crunchbase
   url: https://www.crunchbase.com/organization/simplifai-labs
 x-enrichment:
-  date: '2026-07-21'
+  date: '2026-08-12'
   status: nochange
   artifacts_added: 0
   pass: local-v1
+x-coverage:
+  state: none
+  reason: defunct
+  detail: >-
+    simplifailabs.com lapsed and was re-registered on 2025-08-18 (GoDaddy, NS1/NS2.CYBERFUEL.COM)
+    and now returns a Spanish-language Cyberfuel "this site has no published content" hosting
+    placeholder, so every /.well-known/, /openapi.json and /llms.txt probe 404s against a host
+    the company no longer operates; no api/docs/developer subdomain resolves and the simplifailabs
+    GitHub org contains only a react-native-elements fork.
+  evidence:
+  - url: https://simplifailabs.com/
+    status: 200
+  - url: https://simplifailabs.com/openapi.json
+    status: 404
+  - url: https://simplifailabs.com/.well-known/agent-card.json
+    status: 404
+  - url: https://simplifailabs.com/.well-known/security.txt
+    status: 404
+  - url: https://simplifailabs.com/llms.txt
+    status: 404
+  - url: https://github.com/simplifailabs
+    status: 200
+  checked: '2026-08-12'
