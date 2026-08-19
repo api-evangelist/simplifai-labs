@@ -38,7 +38,7 @@ x-domain-status: 'simplifailabs.com no longer serves Simplifai Labs. WHOIS (chec
   ("Actualmente este sitio no cuenta con contenido publicado"). api., docs., and developer.
   subdomains do not resolve; simplifailabs.ae/.io/.co/.tech and simplifai-labs.com do not
   resolve either.'
-specificationVersion: '0.20'
+specificationVersion: '0.23'
 created: '2026-07-17'
 modified: '2026-08-12'
 tags:
